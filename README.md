@@ -1,1 +1,1 @@
-# aprendiendo-javasSript
+# aprendiendo-javaScript
