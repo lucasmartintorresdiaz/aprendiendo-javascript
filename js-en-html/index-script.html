@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplos JS con </title>
+</head>
+<body>
+  <h1>Ejemplos de JavaScript en HTML usando &lt;script&gt;</h1>
+  <p>En este archivo tenemos dos ejemplos usando JS dentro de un &lt;script&gt;.</p>
+
+  <h2>Ejemplo 1: La página quiere hablarte</h2>
+  <p>Haz clic en el botón y verás un mensaje de la página.</p>
+  <!-- Botón para el primer ejemplo -->
+  <button id="btnHablar">Hazme hablar</button>
+
+  <hr>
+
+  <h2>Ejemplo 2: Cambiar texto dinámicamente</h2>
+  <p id="mensaje">Este texto se va a actualizar cuando hagas clic.</p>
+  <!-- Botón para el segundo ejemplo -->
+  <button id="btnCambiarTexto">Cambiar texto</button>
+
+  <hr>
+
+  <!-- Script interno -->
+  <script>
+    // Ejemplo 1
+    // Seleccionamos el botón y le agregamos un "listener" para el clic
+    document.getElementById('btnHablar').onclick = function() {
+      alert('Hola! Humano, el saludo parece el mismo pero no lo es😃');
+    };
+
+    // Ejemplo 2 
+    // Seleccionamos el botón y cambiamos el texto del párrafo al hacer clic
+    document.getElementById('btnCambiarTexto').onclick = function() {
+      document.getElementById('mensaje').innerText = 'Hola Mundo (desde Script aun en HTML)';
+    };
+
+    /* Explicación
+       - Usamos <script> para separar el JavaScript del HTML.
+       - getElementById selecciona elementos por su id.
+       - innerText cambia el contenido del elemento.
+       - onClick se agrega mediante JavaScript, en vez de inline.
+       - Ventaja: HTML más limpio y fácil de mantener.
+    */
+  </script>
+</body>
+</html>
