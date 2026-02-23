@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplos de JS Inline</title>
+  </head>
+  <body>
+    <h1>Ejemplos de JavaScript en HTML</h1>
+    <p>En este archivo tenemos dos ejemplos usando JS inline</p>
+
+    <!-- Ejemplo 2: La página quiere hablarte -->
+    <h2>Ejemplo 1: La página quiere hablarte</h2>
+    <p>Haz clic en el botón y verás un mensaje de la página.</p>
+
+    <button onclick="alert('Hola! Humano, espero que estés muy bien 😃')">
+      Hazme hablar
+    </button>
+
+    <!-- Explicación:
+       - 'onclick' escucha el clic del usuario.
+       - 'alert' muestra un mensaje emergente en la pantalla.
+       - Este es un ejemplo simple de JS inline 
+  -->
+
+    <hr />
+
+    <!-- Ejemplo 2: Cambiar texto -->
+    <h2>Ejemplo 2: Cambiar texto dinámicamente</h2>
+    <p id="mensaje">
+      Este texto se va a actualizar cuando hagas click en "Cambiar texto".
+    </p>
+
+    <button
+      onclick="document.getElementById('mensaje').innerText = 'Hola Humano!'"
+    >
+      Cambiar texto
+    </button>
+
+    <!-- Explicación:
+       - 'document.getElementById("mensaje")' selecciona el párrafo por su id.
+       - 'innerText' reemplaza el contenido del párrafo.
+       - Se activa al hacer clic en el botón usando 'onclick'.
+       - Permite interactuar dinámicamente con la página.
+  -->
+
+    <hr />
+
+    <!-- Nota general:
+       Aunque estos ejemplos funcionan bien para aprender, 
+       en proyectos grandes se recomienda usar <script> o archivos JS externos 
+       para mantener el código HTML limpio y organizado.
+    -->
+  </body>
+</html>
